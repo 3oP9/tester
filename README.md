@@ -1,6 +1,7 @@
 from kivy.lang import Builder
 from kivymd.app import MDApp
-
+from kivymd.uix.screen import Screen
+from kivymd.uix.button import MDRectangleFlatButton
 v7x = '''
 Screen: 	
 	MDFloatingActionButtonSpeedDial
@@ -23,9 +24,7 @@ class FirstApp(MDApp):
     	'facebook': 'Ghost YT',
     	'telegram': 'Ghost YT',
     	'discord': 'SHEMO#6371',
-    
-	
-	}
+	}        
 	def build(self):
 		return Builder.load_string(v7x)
 		
